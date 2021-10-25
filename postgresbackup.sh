@@ -36,15 +36,11 @@ echo "-------------------- Start Process ---------------------"
 echo ""
 
 
-PGPASSWORD="odoosaas" pg_dump -h localhost -U odoosaas -d ap.df.daffodil.family > DB_BACKUP/$DAY_CURRENT/ap.df.daffodil.family_$DAY_TIME_CURRENT.sql
-echo "ap.df.daffodil.family_$DAY_TIME_CURRENT.sql  ap.df.daffodil.family Done"
-
 PGPASSWORD="odoosaas" pg_dump -h localhost -U odoosaas -d ahl.df.daffodil.family > DB_BACKUP/$DAY_CURRENT/ahl.df.daffodil.family_$DAY_TIME_CURRENT.sql
 echo "ahl.df.daffodil.family_$DAY_TIME_CURRENT.sql  ahl.df.daffodil.family Done"
 
 PGPASSWORD....
 
-PGPASSWORD.....
 
 echo ""
 echo "------------------- $(date +%Y-%m-%d_%H:%M:%S) ----------------"
